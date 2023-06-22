@@ -10,12 +10,17 @@ body {
     font-weight: 400;
 }
 
+.mobile-img img {
+    width: 100%;
+    height: auto;
+}
+
 .desktop-img {
     display: none;
 }
 
 .update {
-    width: 85%;
+    width: 90%;
     margin: auto;
     padding-top: 2em;
 }
@@ -31,15 +36,58 @@ body {
 }
 
 .hero-list-item {
-    /* list-style-type: none; */
+    list-style-type: none;
     margin: 20px;
-    list-style-position: outside;
+    position: relative;
 }
 
-
-/* .hero-list-item::before {
+.hero-list-item::before {
     content: "";
-    width: 21px;
-    height: 21px;
-    background-color: red;
-} */
+    width: 20px;
+    height: 20px;
+    background-image: url("/images/icon-list.svg");
+    background-size: cover;
+    left: -2em;
+    position: absolute;
+}
+
+.herolist {
+    margin-left: 10px
+}
+
+.subscribe {
+    margin-top: 3em;
+}
+
+.sign-up {
+    display: grid;
+    /*     display: flex;
+    flex-direction: column;
+    gap: 1.5em; */
+}
+
+label {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+input,
+button {
+    margin: 10px 0;
+    height: 3em;
+    border: black 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input {
+    padding-left: 2em;
+    color: hsl(231, 7%, 60%);
+}
+
+button {
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: 2em;
+}
