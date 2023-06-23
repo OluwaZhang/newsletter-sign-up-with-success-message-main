@@ -9,6 +9,15 @@ body {
     font-weight: 400;
 }
 
+.suc-container {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+}
+
 .mobile-img img {
     width: 100%;
     height: auto;
