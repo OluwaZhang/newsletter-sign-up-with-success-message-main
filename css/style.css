@@ -139,15 +139,17 @@ button {
     }
     body {
         background-color: hsl(234, 29%, 20%);
+        margin: 100px 50px;
     }
     .container {
+        /* width: 200px; */
         display: flex;
         gap: 50px;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        margin: 100px;
-        padding: 30px;
+        /* margin: 100px; */
+        padding: 40px;
         background-color: white;
         border: 1px solid black;
         border-radius: 20px;
@@ -157,6 +159,20 @@ button {
     }
     button:active {
         background-color: hsl(4, 100%, 67%);
-        box-shadow: 20px 20px;
+    }
+    .suc-message-body {
+        margin: 100px;
+    }
+    .suc-container {
+        /* margin: 100px; */
+        padding: 40px;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: aliceblue;
+        display: flex;
+    }
+    .dismiss {
+        position: static;
     }
 }
