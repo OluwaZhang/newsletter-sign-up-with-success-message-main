@@ -20,11 +20,15 @@
         </h1>
 
         <p class="message">
-            A confirmation email has been sent to <b>ash@loremcompany.com</b> . Please open it and click the button inside to confirm your subscription.
+            A confirmation email has been sent to <b><span id="variable"></span></b>. Please open it and click the button inside to confirm your subscription.
         </p>
 
-        <button class="dismiss">Dismiss message</button>
+        <a href="./index.html"><button class="dismiss">Dismiss message</button></a>
     </div>
+
+    <script>
+        document.getElementById("variable").innerHTML = localStorage.getItem("eValue")
+    </script>
 </body>
 
 </html>
